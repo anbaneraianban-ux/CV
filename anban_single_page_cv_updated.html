@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anban Eraianban S K - Single Page CV</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f8;
+      color: #222;
+      line-height: 1.45;
+    }
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 18px auto;
+      background: #fff;
+      padding: 26px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      border-radius: 12px;
+    }
+    .top {
+      display: grid;
+      grid-template-columns: 1fr 140px;
+      gap: 20px;
+      align-items: start;
+      border-bottom: 2px solid #111;
+      padding-bottom: 18px;
+      margin-bottom: 18px;
+    }
+    h1 {
+      margin: 0 0 6px;
+      font-size: 30px;
+      letter-spacing: 0.5px;
+    }
+    .role {
+      font-size: 15px;
+      font-weight: 700;
+      color: #444;
+      margin-bottom: 10px;
+    }
+    .contact {
+      font-size: 13px;
+      color: #555;
+    }
+    .photo {
+      width: 140px;
+      height: 160px;
+      border: 2px dashed #999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 13px;
+      color: #666;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #fafafa;
+    }
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .summary {
+      background: #f8f9fb;
+      border-left: 4px solid #111;
+      padding: 12px 14px;
+      border-radius: 8px;
+      margin-bottom: 18px;
+      font-size: 14px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 18px;
+    }
+    .section {
+      margin-bottom: 16px;
+    }
+    .section h2 {
+      margin: 0 0 8px;
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 6px;
+    }
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+    li {
+      margin-bottom: 7px;
+      font-size: 13.5px;
+    }
+    .tag-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .tag {
+      padding: 6px 10px;
+      background: #f1f3f5;
+      border: 1px solid #e1e4e8;
+      border-radius: 999px;
+      font-size: 12.5px;
+    }
+    .mini-card {
+      background: #fafafa;
+      border: 1px solid #ececec;
+      border-radius: 10px;
+      padding: 12px;
+      margin-bottom: 10px;
+    }
+    .mini-card strong {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 13.5px;
+    }
+    .mini-card span {
+      font-size: 12.8px;
+      color: #555;
+    }
+    .footer-note {
+      margin-top: 10px;
+      font-size: 11.5px;
+      color: #666;
+      text-align: center;
+      border-top: 1px solid #eee;
+      padding-top: 10px;
+    }
+    @media (max-width: 900px) {
+      .page {
+        width: 100%;
+        min-height: auto;
+        margin: 0;
+        border-radius: 0;
+        padding: 18px;
+      }
+      .top, .grid {
+        grid-template-columns: 1fr;
+      }
+      .photo {
+        width: 130px;
+        height: 150px;
+      }
+    }
+    @media print {
+      body { background: #fff; }
+      .page {
+        width: 100%;
+        min-height: auto;
+        margin: 0;
+        box-shadow: none;
+        border-radius: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="top">
+      <div>
+        <h1>ANBAN ERAIANBAN S K</h1>
+        <div class="role">Founder | Battery Systems | Solar EPC | Project Execution</div>
+        <div class="contact">
+          Salem, Tamil Nadu<br>
+          +91 98426 75750 | anbaneraianban01@gmail.com<br>
+          amptronevhub.in
+        </div>
+      </div>
+      <div class="photo">
+        <img src="data:image/jpeg;base64,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" alt="Profile Photo">
+      </div>
+    </div>
+
+    <div class="summary">
+      Execution-focused founder with hands-on experience in battery systems, solar EPC,
+      project coordination, procurement follow-up, site execution, client handling, and
+      early-stage product commercialization.
+    </div>
+
+    <div class="grid">
+      <div>
+        <div class="section">
+          <h2>Major Highlights</h2>
+          <ul>
+            <li>Founder of <strong>Amptron EV Hub Pvt. Ltd.</strong>, focused on reconfigurable BMS, battery swapping, and energy storage.</li>
+            <li>Scaled Solar EPC execution from early single-digit lakh revenue in 2023 to about <strong>INR 1.1 crore in 2024</strong>.</li>
+            <li>Handled coordination and execution exposure for project works valued at <strong>INR 2.4 crore</strong> and <strong>INR 2.6 crore</strong>.</li>
+            <li>Reported <strong>30–40% improvement</strong> in handled operations through active execution and coordination support.</li>
+            <li>Strong experience in vendor follow-up, documentation, scheduling, QA/QC, and client communication.</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>Experience Snapshot</h2>
+          <div class="mini-card">
+            <strong>Amptron EV Hub Pvt. Ltd. – Founder & Director</strong>
+            <span>Battery systems, BMS innovation, battery swapping, pilot commercialization.</span>
+          </div>
+          <div class="mini-card">
+            <strong>SEES – Solar EPC Execution</strong>
+            <span>Project execution, coordination, delivery support, revenue scale-up.</span>
+          </div>
+          <div class="mini-card">
+            <strong>SketchX – Consulting & Technical Services</strong>
+            <span>Consulting operations and technical service management.</span>
+          </div>
+          <div class="mini-card">
+            <strong>SK Engineering / SK Group</strong>
+            <span>Execution support, stakeholder coordination, procurement, and documentation.</span>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="section">
+          <h2>Core Skills</h2>
+          <div class="tag-wrap">
+            <div class="tag">Battery Systems</div>
+            <div class="tag">BMS Development</div>
+            <div class="tag">Solar EPC</div>
+            <div class="tag">Project Execution</div>
+            <div class="tag">Site Management</div>
+            <div class="tag">Technical Documentation</div>
+            <div class="tag">Vendor Coordination</div>
+            <div class="tag">Client Handling</div>
+            <div class="tag">Business Development</div>
+            <div class="tag">QA/QC</div>
+            <div class="tag">Electronics</div>
+            <div class="tag">Embedded Systems</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Education</h2>
+          <ul>
+            <li><strong>M.E. EEE</strong> – Sona College of Technology (Pursuing)</li>
+            <li><strong>B.E. EEE</strong> – Government College of Engineering, Karuppur, Anna University – First Class (May 2023)</li>
+            <li><strong>Diploma in EEE</strong> – Thiagarajar Polytechnic College, Salem – First Class with Superlative Distinction (Apr 2020)</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>Languages & Focus</h2>
+          <ul>
+            <li><strong>Languages:</strong> Tamil, English</li>
+            <li><strong>Focus Areas:</strong> Battery innovation, EV charging & swapping, solar infrastructure, electronics prototyping</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-note">
+      Simple single-page CV layout.
+    </div>
+  </div>
+</body>
+</html>
